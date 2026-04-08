@@ -80,6 +80,13 @@ section h3 {
   font-size: 1.15rem;
   color: var(--text);
   margin: 1.5rem 0 0.5rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--border);
+}
+
+section h2 + h3 {
+  border-top: none;
+  padding-top: 0;
 }
 
 section p {
@@ -169,6 +176,11 @@ section p {
   color: var(--blue);
 }
 
+/* Interaction hints */
+.viz-section p strong {
+  color: var(--blue);
+}
+
 /* D3 tooltip */
 .d3-tooltip {
   position: absolute;
@@ -215,6 +227,21 @@ section p {
 }
 
 .conclusion-list li strong {
+  color: var(--text);
+}
+
+/* Task list in intro */
+section ol {
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+section ol li {
+  margin-bottom: 0.5rem;
+  color: var(--text-light);
+}
+
+section ol li strong {
   color: var(--text);
 }
 

@@ -38,6 +38,18 @@
     valued at $2,000 or more, capturing the period around key events including the presidential
     inauguration, government funding deadlines, and cabinet nomination battles.
   </p>
+
+  <h3>Analysis Tasks</h3>
+  <p>We set out to answer three guiding questions through our visualizations:</p>
+  <ol>
+    <li><strong>When does capital concentrate?</strong> Do traders spread bets evenly over time, or does
+    volume spike around specific political events and deadlines?</li>
+    <li><strong>Where does conviction show up?</strong> Are the largest trades placed on uncertain
+    50/50 outcomes, or do big-money participants concentrate at extreme probabilities?</li>
+    <li><strong>How do different political topics trade differently?</strong> Do government shutdown
+    markets, elections, and international affairs show structurally different patterns in timing,
+    volume, and conviction?</li>
+  </ol>
 </section>
 
 <!-- ====== DATA DESCRIPTION ====== -->
@@ -80,6 +92,21 @@
     implied probabilities from 1% to 99%). All trades occurred on the Kalshi exchange and
     represent real financial positions.
   </p>
+
+  <h3>Data Suitability &amp; Limitations</h3>
+  <p>
+    This dataset is well-suited for our analysis because it captures real financial commitments
+    rather than survey responses or polling data—each observation represents actual capital at risk.
+    The 30-day window around the presidential inauguration and government funding deadlines provides
+    a politically dense period with multiple concurrent events, enabling cross-topic comparison.
+    However, several limitations should be noted: the Kalshi API does not expose trader identity,
+    so we cannot distinguish retail participants from institutional ones or track repeat behavior.
+    Our $2,000 minimum filter excludes the long tail of smaller trades, which may exhibit different
+    timing and topic patterns. The dataset also lacks order-book depth (bid/ask spread data), which
+    would help separate liquidity-driven trades from conviction-driven ones. Finally, the 30-day
+    window may not generalize to calmer political periods—our findings are most applicable to
+    high-activity windows around major deadlines and transitions.
+  </p>
 </section>
 
 <!-- ====== REFERENCES ====== -->
@@ -88,6 +115,8 @@
   <ul>
     <li><a href="https://www.dlnews.com/articles/regulation/kalshi-ceo-tackles-difficulty-of-cracking-down-on-insider-trading/" target="_blank">DL News – Kalshi CEO Tackles Difficulty of Cracking Down on Insider Trading</a></li>
     <li><a href="https://www.cbsnews.com/newyork/news/prediction-markets-kalshi-polymarket-regulation/" target="_blank">CBS News – Prediction Markets: Kalshi, Polymarket, and Regulation</a></li>
+    <li><a href="https://www.science.org/doi/10.1126/science.aaz8299" target="_blank">Arrow et al. – The Promise of Prediction Markets (Science, 2008)</a></li>
+    <li><a href="https://kalshi.com/blog/how-kalshi-works" target="_blank">Kalshi – How Kalshi Works: A Guide to Event Contracts</a></li>
   </ul>
 </section>
 
@@ -140,7 +169,8 @@
     <span class="viz-badge badge-altair">Altair</span>
   </h3>
   <p>Faceted histograms showing how trade sizes are distributed across the four largest market topics.
-    Uses a colorblind-safe palette (no red/green adjacency).</p>
+    Uses a colorblind-safe palette (no red/green adjacency).
+    <strong>Interaction:</strong> Hover over any bar to see the exact count and value range for that bin.</p>
 
   <div class="viz-container">
     <iframe src="charts/viz3-distribution.html" title="Distribution" style="min-height: 600px;"></iframe>
@@ -259,8 +289,9 @@
 <!-- ====== SUMMARY / CONCLUSIONS ====== -->
 <section>
   <h2>Summary &amp; Conclusions</h2>
-  <p>Through eight visualizations spanning macro overviews to granular deep-dives, we identified
-  several key patterns in how capital flows through political prediction markets:</p>
+  <p>Through eight visualizations spanning macro overviews to granular deep-dives, we addressed
+  our three guiding questions and identified key patterns in how capital flows through political
+  prediction markets:</p>
 
   <ol class="conclusion-list">
     <li><strong>Deadline-driven capital concentration:</strong> Political prediction markets see dramatic
@@ -269,7 +300,7 @@
     information before committing large positions.</li>
 
     <li><strong>Conviction at the extremes:</strong> The largest trades consistently cluster at very
-    high (>90%) or very low (<10%) implied probabilities, not in the uncertain middle. Big-money
+    high (&gt;90%) or very low (&lt;10%) implied probabilities, not in the uncertain middle. Big-money
     participants appear to trade on strong conviction rather than speculating on 50/50 outcomes—a
     pattern consistent with informed, rational capital allocation.</li>
 
@@ -280,9 +311,23 @@
     as political indicators.</li>
   </ol>
 
-  <p><strong>Future work</strong> could extend this analysis to longer time windows, incorporate
-  real-time news event timestamps for causal analysis, compare Kalshi prices with traditional
-  polling data, or model trader behavior segmentation based on trade size and timing patterns.</p>
+  <h3>Limitations</h3>
+  <p>
+    Our analysis has several important caveats. The $2,000 minimum trade filter biases our sample
+    toward high-conviction or well-capitalized traders, so these patterns may not hold for the broader
+    market. The 30-day window captures an unusually active political period (inauguration, shutdown
+    deadlines); calmer periods likely show less pronounced volume spikes and weaker temporal patterns.
+    Without trader identity data, we cannot determine whether volume spikes are driven by many
+    participants or a few large actors repeatedly trading. Finally, correlation between volume and
+    event timing does not establish causation—external factors like media coverage cycles may also
+    drive these patterns.
+  </p>
+
+  <h3>Future Work</h3>
+  <p>Future work could extend this analysis to longer time windows to test whether these patterns
+  persist outside high-activity periods, incorporate real-time news event timestamps for causal
+  analysis, compare Kalshi prices with traditional polling data to evaluate prediction market
+  accuracy, or model trader behavior segmentation based on trade size and timing patterns.</p>
 </section>
 
 </div><!-- /container -->
