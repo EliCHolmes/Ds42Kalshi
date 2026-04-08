@@ -2,7 +2,7 @@ Design Rationale – Kalshi Political Trade Analysis
 DS4200 Information Presentation & Data Visualization
 Calvin, Eli, Angela & Yash | Spring 2026 | Northeastern University
 
-Published website: https://eliholmes.github.io/Ds42Kalshi/
+Published website: https://elicholmes.github.io/Ds42Kalshi/
 
 ========================================================================
 VISUALIZATION 1: Daily Political Trade Volume Over Time (Altair)
