@@ -1,0 +1,294 @@
+ticker,event_ticker,title
+CONTROLH-2026-D,CONTROLH-2026,Will Democrats win the House in 2026?
+CONTROLH-2026-R,CONTROLH-2026,Will Republicans win the House in 2026?
+CONTROLS-2026-D,CONTROLS-2026,Will Democrats win the U.S. Senate in 2026?
+CONTROLS-2026-R,CONTROLS-2026,Will Republicans win the U.S. Senate in 2026?
+GOVPARTYAZ-26-R,GOVPARTYAZ-26,Will the Republican party win the governorship in Arizona
+GOVPARTYCA-26-D,GOVPARTYCA-26,Will the Democratic party win the governorship in California
+GOVPARTYMI-26-R,GOVPARTYMI-26,Will the Republican party win the governorship in Michigan
+GOVPARTYMN-26-D,GOVPARTYMN-26,Will the Democratic party win the governorship in Minnesota
+GOVPARTYNY-26-R,GOVPARTYNY-26,Will the Republican party win the governorship in New York
+GOVPARTYOH-26-D,GOVPARTYOH-26,Will the Democratic party win the governorship in Ohio
+GOVPARTYOH-26-R,GOVPARTYOH-26,Will the Republican party win the governorship in Ohio
+GOVPARTYWA-28-D,GOVPARTYWA-28,Will the Democratic party win the governorship in Washington
+GOVPARTYWA-28-R,GOVPARTYWA-28,Will the Republican party win the governorship in Washington
+HOUSEVA2-26-D,HOUSEVA2-26,Will Democratic win the House race for VA-2?
+HOUSEVA2-26-R,HOUSEVA2-26,Will Republican win the House race for VA-2?
+KXACAEXT-26JAN-27,KXACAEXT-26JAN,"Will legislation extending or reinstating (if expired) enhanced ACA premium tax credits becomes law before Jan 1, 2027?"
+KXACAEXT-26JAN-APR,KXACAEXT-26JAN,"Will legislation extending or reinstating (if expired) enhanced ACA premium tax credits becomes law before Apr 1, 2026?"
+KXALIENS-27,KXALIENS-27,Will the U.S. confirm that aliens exist before 2027?
+KXATTENDSOTU-BNET,KXATTENDSOTU,Will Benjamin Netanyahu attend the 2026 State of the Union Address?
+KXATTENDSOTU-BTRU,KXATTENDSOTU,Will Barron Trump attend the 2026 State of the Union Address?
+KXATTENDSOTU-DROD,KXATTENDSOTU,Will Delcy Rodriguez attend the 2026 State of the Union Address?
+KXATTENDSOTU-DWHI,KXATTENDSOTU,Will Dana White attend the 2026 State of the Union Address?
+KXATTENDSOTU-GNEW,KXATTENDSOTU,Will Gavin Newsom attend the 2026 State of the Union Address?
+KXATTENDSOTU-KWAR,KXATTENDSOTU,Will Kevin Warsh attend the 2026 State of the Union Address?
+KXATTENDSOTU-NGOR,KXATTENDSOTU,Will Neil Gorsuch attend the 2026 State of the Union Address?
+KXBALANCEPOWERCOMBO-27FEB-DR,KXBALANCEPOWERCOMBO-27FEB,Will House Control be Democratic AND Senate Control be Republican for Feb 2027?
+KXBALANCEPOWERCOMBO-27FEB-RR,KXBALANCEPOWERCOMBO-27FEB,Will House Control be Republican AND Senate Control be Republican for Feb 2027?
+KXBILLCONTEMPT-26MAR01,KXBILLCONTEMPT-26MAR01,"Will a resolution finding Bill Clinton in contempt of Congress pass the House before Mar 1, 2026?"
+KXBOYCOTTWC-26,KXBOYCOTTWC-26,Will any NATO member state boycott the USA World Cup in 2026?
+KXBRBALLOT-26-LULA,KXBRBALLOT-26,Will Luiz Inácio Lula da Silva be on the ballot in the next Brazilian presidential election?
+KXBRPRES-26-FBOL,KXBRPRES-26,Will Flávio Bolsonaro win the 2026 Brazilian presidential election?
+KXBRPRES-26-RSAN,KXBRPRES-26,Will Renan Santos win the 2026 Brazilian presidential election?
+KXBRPRES-26-TDF,KXBRPRES-26,Will Tarcisio de Frietas win the 2026 Brazilian presidential election?
+KXCABLEAVE-26FEB-26APR,KXCABLEAVE-26FEB,Will any member of Trump's Cabinet leave before Apr 2026?
+KXCABOUT-29JAN-CWRI,KXCABOUT-29JAN,Will Chris Wright be the first person to leave the Trump Cabinet?
+KXCABOUT-29JAN-DBUR,KXCABOUT-29JAN,Will Doug Burgum be the first person to leave the Trump Cabinet?
+KXCABOUT-29JAN-HLUT,KXCABOUT-29JAN,Will Howard Lutnick be the first person to leave the Trump Cabinet?
+KXCABOUT-29JAN-JGRE,KXCABOUT-29JAN,Will Jamieson Greer be the first person to leave the Trump Cabinet?
+KXCABOUT-29JAN-JRAT,KXCABOUT-29JAN,Will John Ratcliffe be the first person to leave the Trump Cabinet?
+KXCABOUT-29JAN-KLOE,KXCABOUT-29JAN,Will Kelly Loeffler be the first person to leave the Trump Cabinet?
+KXCABOUT-29JAN-KNOE,KXCABOUT-29JAN,Will Kristi Noem be the first person to leave the Trump Cabinet?
+KXCABOUT-29JAN-LCDR,KXCABOUT-29JAN,Will Lori Chavez-DeRemer be the first person to leave the Trump Cabinet?
+KXCABOUT-29JAN-LZEL,KXCABOUT-29JAN,Will Lee Zeldin be the first person to leave the Trump Cabinet?
+KXCABOUT-29JAN-MWAL,KXCABOUT-29JAN,Will Mike Waltz be the first person to leave the Trump Cabinet?
+KXCABOUT-29JAN-PBON,KXCABOUT-29JAN,Will Pam Bondi be the first person to leave the Trump Cabinet?
+KXCABOUT-29JAN-RFK,KXCABOUT-29JAN,Will Robert F. Kennedy Jr. be the first person to leave the Trump Cabinet?
+KXCABOUT-29JAN-SBES,KXCABOUT-29JAN,Will Scott Bessent be the first person to leave the Trump Cabinet?
+KXCABOUT-29JAN-STUR,KXCABOUT-29JAN,Will Scott Turner be the first person to leave the Trump Cabinet?
+KXCAWEALTHTAX-26,KXCAWEALTHTAX-26,Will a one-time tax on billionaires ballot initiative in California pass?
+KXCLOSEHORMUZ-27JAN,KXCLOSEHORMUZ-27JAN,Will Iran close Strait of Hormuz before Jan 2027?
+KXCOLLINSSENATERUN-26NOV03,KXCOLLINSSENATERUN-26NOV03,Will Susan Collins run for reelection to the U.S. Senate in 2026?
+KXCOLOMBIAPRES-26-ICAS,KXCOLOMBIAPRES-26,Will Iván Cepeda Castro win the the next Colombian presidential election?
+KXCONGRESSTESTIFY-27JAN-GMAX,KXCONGRESSTESTIFY-27JAN,Will Ghislaine Maxwell testify in front of Congress before Jan 2027?
+KXCPICOMBO-26JAN-0125,KXCPICOMBO-26JAN,Will CPI be Above 0.1% AND YOYCPI be Above 2.5% for Jan 2026?
+KXCPICOMBO-26JAN-0224,KXCPICOMBO-26JAN,Will CPI be Above 0.2% AND YOYCPI be Above 2.4% for Jan 2026?
+KXCRYPTOSTRUCTURE-26JAN-MAR,KXCRYPTOSTRUCTURE-26JAN,"Will a crypto market structure bill becomes law before Mar 1, 2026?"
+KXCZECHCOALITION-27JAN01-ANO,KXCZECHCOALITION-27JAN01,Will ANO 2011 form the next government in the Czech Republic?
+KXDATASET13-26MAR01,KXDATASET13,"Will the Department of Justice (DOJ) release Data Set 13 (pursuant to the Epstein Files Transparency Act) before Mar 1, 2026?"
+KXDATASET13-26SEP01,KXDATASET13,"Will the Department of Justice (DOJ) release Data Set 13 (pursuant to the Epstein Files Transparency Act) before Sep 1, 2026?"
+KXDEMPROGRESSIVESENATESWEEP-26NOV03,KXDEMPROGRESSIVESENATESWEEP-26NOV03,Will the listed Democratic Senate candidates all win their primary elections?
+KXDEMSENATEPRIMARYCOMBO-26NOV03,KXDEMSENATEPRIMARYCOMBO-26NOV03,"Will at least 5 of the following 6 Democratic candidates win their 2026 Senate primaries: James Talarico in Texas, Raja Krishnamoorthi in Illinois, Josh Turek in Iowa, Graham Platner in Maine, Mallory McMorrow in Michigan, and Peggy Flanagan in Minnesota?"
+KXDHSFUND-26FEB13,KXDHSFUND,"Will DHS funding bill become law before Feb 13, 2026?"
+KXDHSFUND-26FEB14,KXDHSFUND,"Will DHS funding bill become law before Feb 14, 2026?"
+KXDHSFUND-26FEB15,KXDHSFUND,"Will DHS funding bill become law before Feb 15, 2026?"
+KXDHSFUND-26FEB16,KXDHSFUND,"Will DHS funding bill become law before Feb 16, 2026?"
+KXDHSFUND-26FEB17,KXDHSFUND,"Will DHS funding bill become law before Feb 17, 2026?"
+KXDHSFUND-26FEB23,KXDHSFUND,"Will DHS funding bill become law before Feb 23, 2026?"
+KXDHSFUND-26MAR01,KXDHSFUND,"Will DHS funding bill become law before Mar 1, 2026?"
+KXDHSFUND-26MAR10,KXDHSFUND,"Will DHS funding bill become law before Mar 10, 2026?"
+KXDHSFUNDING-26APR01,KXDHSFUNDING,"Will legislation providing full-year FY2026 discretionary appropriations for the Department of Homeland Security (including via continuing resolution) become law before Apr 1, 2026?"
+KXDHSFUNDING-26FEB14,KXDHSFUNDING,"Will legislation providing full-year FY2026 discretionary appropriations for the Department of Homeland Security (including via continuing resolution) become law before Feb 14, 2026?"
+KXDHSFUNDING-26MAR01,KXDHSFUNDING,"Will legislation providing full-year FY2026 discretionary appropriations for the Department of Homeland Security (including via continuing resolution) become law before Mar 1, 2026?"
+KXDHSFUNDING-26MAR10,KXDHSFUNDING,"Will legislation providing full-year FY2026 discretionary appropriations for the Department of Homeland Security (including via continuing resolution) become law before Mar 10, 2026?"
+KXDHSFUNDING-26MAR20,KXDHSFUNDING,"Will legislation providing full-year FY2026 discretionary appropriations for the Department of Homeland Security (including via continuing resolution) become law before Mar 20, 2026?"
+KXDIAZOUT-MDC-26SEP01,KXDIAZOUT-MDC,Will Miguel Díaz-Canel leave office before 2026-09-01T14:00:00.000Z?
+KXDISAPPROVETARIFF,KXDISAPPROVETARIFF,"Will legislation that terminates, disapproves, or otherwise limits tariffs imposed by the President of the United States passed the House before Mar 1, 2026?"
+KXDJTVOSTARIFFS,KXDJTVOSTARIFFS,"Will the Supreme Court rule in favor of Trump in V.O.S. Selections, Inc. v. Trump"
+KXELECTIONBILL-26MAY01,KXELECTIONBILL,"Will legislation that requires proof of U.S. citizenship as a condition of registering to vote in federal elections become law before May 1, 2026?"
+KXELECTIONBILL-27JAN01,KXELECTIONBILL,"Will legislation that requires proof of U.S. citizenship as a condition of registering to vote in federal elections become law before Jan 1, 2027?"
+KXELECTVENEZUELA-26JUN01,KXELECTVENEZUELA,"Will Venezuela hold a presidential election before Jun 1, 2026?"
+KXELECTVENEZUELA-26SEP01,KXELECTVENEZUELA,"Will Venezuela hold a presidential election before Sep 1, 2026?"
+KXELECTVENEZUELA-27JAN01,KXELECTVENEZUELA,"Will Venezuela hold a presidential election before Jan 1, 2027?"
+KXEOWEEK-26FEB14,KXEOWEEK-26FEB14,"Will the President sign more than 0 Executive Orders between Feb 8, 2026 and Feb 14, 2026?"
+KXFEDCHAIRCONFIRMED-26APR01,KXFEDCHAIRCONFIRMED,"Will Trump’s first officially announced pick for Chairman of the Federal Reserve be confirmed as Chairman of the Federal Reserve before Apr 1, 2026?"
+KXFEDCHAIRCONFIRMED-26AUG01,KXFEDCHAIRCONFIRMED,"Will Trump’s first officially announced pick for Chairman of the Federal Reserve be confirmed as Chairman of the Federal Reserve before Aug 1, 2026?"
+KXFEDCHAIRCONFIRMED-26JUL01,KXFEDCHAIRCONFIRMED,"Will Trump’s first officially announced pick for Chairman of the Federal Reserve be confirmed as Chairman of the Federal Reserve before Jul 1, 2026?"
+KXFEDCHAIRNOM-29-CWAL,KXFEDCHAIRNOM-29,Will Trump next nominate Christopher Waller as Fed Chair?
+KXFEDCHAIRNOM-29-JS,KXFEDCHAIRNOM-29,Will Trump next nominate Judy Shelton as Fed Chair?
+KXFEDCHAIRNOM-29-KH,KXFEDCHAIRNOM-29,Will Trump next nominate Kevin Hassett as Fed Chair?
+KXFEDCHAIRNOM-29-KW,KXFEDCHAIRNOM-29,Will Trump next nominate Kevin Warsh as Fed Chair?
+KXFEDCHAIRNOM-29-SMIR,KXFEDCHAIRNOM-29,Will Trump next nominate Stephen Miran as Fed Chair?
+KXFEDLEADJUNE-26JUN17-JSHE,KXFEDLEADJUNE-26JUN17,"Will Judy Shelton be Chair of the Federal Open Market Committee (including in acting capacity) on Jun 17, 2026?"
+KXFEDLEADJUNE-26JUN17-MBOW,KXFEDLEADJUNE-26JUN17,"Will Michelle Bowman be Chair of the Federal Open Market Committee (including in acting capacity) on Jun 17, 2026?"
+KXFREYOUT-26MAR01,KXFREYOUT,Will Jacob Frey leave as Mayor of Minneapolis before March 2026?
+KXFULLLIDBEFORE8PM-26FEB08-26FEB10,KXFULLLIDBEFORE8PM-26FEB08,"Will the number of full lids the White House Press Office calls before 8PM on Feb 10, 2026 be at least 1?"
+KXGA14S-26-CMOR,KXGA14S-26,Who will win the 2026 GA-14 special election (including any runoffs)?
+KXGOLDCARDS-26-B52.5,KXGOLDCARDS-26,How many Gold Cards will Trump sell this year?
+KXGORDONDENTONBY-26MAR01-ASTO,KXGORDONDENTONBY-26MAR01,Will Angeliki Stogia win the the 2026 Gordon and Denton by-election?
+KXGORDONDENTONBY-26MAR01-HSPE,KXGORDONDENTONBY-26MAR01,Will Hannah Spencer win the the 2026 Gordon and Denton by-election?
+KXGORDONDENTONBY-26MAR01-MGOO,KXGORDONDENTONBY-26MAR01,Will Matt Goodwin win the the 2026 Gordon and Denton by-election?
+KXGOVCA-26-CBIA,KXGOVCA-26,Who will win the governorship in California?
+KXGOVCA-26-ESWA,KXGOVCA-26,Who will win the governorship in California?
+KXGOVCA-26-KPOR,KXGOVCA-26,Who will win the governorship in California?
+KXGOVCA-26-MMAH,KXGOVCA-26,Who will win the governorship in California?
+KXGOVFLNOMR-26-JCOL,KXGOVFLNOMR-26,Wil Jay Collins be the Republican nominee for Governor in Florida?
+KXGOVFLNOMR-26-JFIS,KXGOVFLNOMR-26,Wil James Fishback be the Republican nominee for Governor in Florida?
+KXGOVMNNOMD-26-AKLO,KXGOVMNNOMD-26,Will Amy Klobuchar be the Democratic nominee for Governor in Minnesota?
+KXGOVNYNOMD-25-AD,KXGOVNYNOMD-25,Wil Antonio Delgado be the Democratic nominee for Governor in New York?
+KXGOVOHNOMR-26-CPUT,KXGOVOHNOMR-26,Will Casey Putsch be the Republican nominee for Governor in Ohio?
+KXGOVTSHUTDOWN-26FEB14,KXGOVTSHUTDOWN-26FEB14,"Will the US government be shut down on Feb 14, 2026?"
+KXGOVTSHUTLENGTH-26FEB07-G10,KXGOVTSHUTLENGTH-26FEB07,"Will the US government be shut down for at least 10 days between Feb 7, 2026 and Dec 31, 2026?"
+KXGREENLAND-29-26MAY,KXGREENLAND-29,Will Trump buy Greenland?
+KXGREENLAND-29-27,KXGREENLAND-29,Will Trump buy Greenland?
+KXGREENLANDPRICE-29JAN21-NOACQ,KXGREENLANDPRICE-29JAN21,Will there be no U.S. acquisition of Greenland during Trump's term?
+KXGREENTERRITORY-29-26APR,KXGREENTERRITORY-29,"Will the United States acquire any part of Greenland before Apr 1, 2026?"
+KXHOUSERACE-CT01-26-D,KXHOUSERACE-CT01-26,Will Democratic win the House race for CT-01?
+KXHOUSERACE-MN05-26-D,KXHOUSERACE-MN05-26,Will Democratic win the House race for MN-05?
+KXHOUSERACE-NJ11-26-D,KXHOUSERACE-NJ11-26,Will Democratic win the House race for NJ-11?
+KXHOUSERACE-SC03-26-R,KXHOUSERACE-SC03-26,Will Republican win the House race for SC-03?
+KXHOUSERACE-WA04-26-R,KXHOUSERACE-WA04-26,Will Republican win the House race for WA-04?
+KXIMPEACH-26-JUN01,KXIMPEACH,"Will the President be impeached before Jun 1, 2026?"
+KXIMPEACH-27-JAN01,KXIMPEACH,"Will the President be impeached before Jan 1, 2027?"
+KXINSURRECTION-29-26MAR,KXINSURRECTION-29,Will Trump invoke the Insurrection Act during his Presidency?
+KXINSURRECTION-29-27,KXINSURRECTION-29,Will Trump invoke the Insurrection Act during his Presidency?
+KXJULYCHARTER26-26,KXJULYCHARTER26-26,Will the July National Charter in Bangladesh pass?
+KXKHAMENEIOUT-AKHA-26APR01,KXKHAMENEIOUT-AKHA,Will Ali Khamenei leave office before 2026-04-01T14:00:00.000Z?
+KXKHAMENEIOUT-AKHA-26JUL01,KXKHAMENEIOUT-AKHA,Will Ali Khamenei leave office before 2026-07-01T14:00:00.000Z?
+KXKHAMENEIOUT-AKHA-26MAR01,KXKHAMENEIOUT-AKHA,Will Ali Khamenei leave office before 2026-03-01T15:00:00.000Z?
+KXKHAMENEIOUT-AKHA-26SEP01,KXKHAMENEIOUT-AKHA,Will Ali Khamenei leave office before 2026-09-01T14:00:00.000Z?
+KXKY4R-26-TMAS,KXKY4R-26,Wil Thomas Massie be the Republican nominee for KY-4?
+KXLAGODAYS-26FEB-2,KXLAGODAYS-26FEB,Will Trump make 2 trips to Mar-a-Lago as President in Feb 2026?
+KXLAGODAYS-26FEB-3,KXLAGODAYS-26FEB,Will Trump make 3 trips to Mar-a-Lago as President in Feb 2026?
+KXLAGODAYS-26FEB-4,KXLAGODAYS-26FEB,Will Trump make 4 trips to Mar-a-Lago as President in Feb 2026?
+KXLAGODAYS-26FEB-5,KXLAGODAYS-26FEB,Will Trump make 5 trips to Mar-a-Lago as President in Feb 2026?
+KXLDPSEATS-26FEB08-A310,KXLDPSEATS-26FEB08,Will LDP win above 310 seats in the 2026 Japanese general election?
+KXLEADERSOUT-27JAN01-AKHAIRA,KXLEADERSOUT-27JAN01,"Will Ali Khamenei leave Supreme Leader of Iran before Jan 1, 2027?"
+KXLEADERSOUT-27JAN01-KSTAUK,KXLEADERSOUT-27JAN01,"Will Keir Starmer leave Prime Minister of the United Kingdom before Jan 1, 2027?"
+KXLEADERSOUT-27JAN01-MDIACPC,KXLEADERSOUT-27JAN01,"Will Miguel Díaz-Canel leave First Secretary of the Communist Party of Cuba before Jan 1, 2027?"
+KXLEADERSOUT-27JAN01-VORBHUN,KXLEADERSOUT-27JAN01,"Will Viktor Orbán leave Prime Minister of Hungary before Jan 1, 2027?"
+KXLEADERSOUT-27JAN01-VPUTRUS,KXLEADERSOUT-27JAN01,"Will Vladimir Putin leave President of Russia before Jan 1, 2027?"
+KXLEADERSOUT-27JAN01-VZELUKR,KXLEADERSOUT-27JAN01,"Will Volodymyr Zelenskyy leave President of Ukraine before Jan 1, 2027?"
+KXLEADERSOUT-27JAN01-XJINCHI,KXLEADERSOUT-27JAN01,"Will Xi Jinping leave General Secretary of the Communist Party of China before Jan 1, 2027?"
+KXLEAVESTARMER-26APR01,KXLEAVESTARMER,"Will Keir Starmer leave Prime Minister of the United Kingdom before Apr 1, 2026?"
+KXLEAVESTARMER-26JUL01,KXLEAVESTARMER,"Will Keir Starmer leave Prime Minister of the United Kingdom before Jul 1, 2026?"
+KXLEAVESTARMER-26MAR01,KXLEAVESTARMER,"Will Keir Starmer leave Prime Minister of the United Kingdom before Mar 1, 2026?"
+KXLEAVESTARMER-26SEP01,KXLEAVESTARMER,"Will Keir Starmer leave Prime Minister of the United Kingdom before Sep 1, 2026?"
+KXLEAVEWALZ-27JAN01-TWAL-26JUL01,KXLEAVEWALZ-27JAN01,Will Tim Walz leave the governorship of Minnesota after Issuance and before July 2026?
+KXLEAVEWALZ-27JAN01-TWAL-27JAN01,KXLEAVEWALZ-27JAN01,Will Tim Walz leave the governorship of Minnesota after Issuance and before 2027?
+KXLOSEPRIMARYHOUSED-26NOV03-0,KXLOSEPRIMARYHOUSED-26NOV03,Will exactly 0 House Democratic members lose their primary in 2026?
+KXLOSEPRIMARYHOUSED-26NOV03-1,KXLOSEPRIMARYHOUSED-26NOV03,Will exactly 1 House Democratic members lose their primary in 2026?
+KXMARSEILLEMAYOR-26MAR15-BPAY,KXMARSEILLEMAYOR-26MAR15,Will Benoît Payan win the 2026 Marseille mayoral election?
+KXMAYORLA-26-NRAM,KXMAYORLA-26,Who will win Los Angeles Mayoral Election?
+KXMJSCHEDULE-26JUL,KXMJSCHEDULE,When will marijuana be rescheduled?
+KXMOVNJ11SPECIALD-26FEB05-WIN-P1,KXMOVNJ11SPECIALD-26FEB05,Will the margin of victory for the election winner in NJ-11 special election Democratic primary be between 0% and 3%?
+KXMUSKOAI-26,KXMUSKOAI-26,Will Elon Musk win Musk v. Altman et al?
+KXNEXTHUNGARYPM-26MAY01-PMAG,KXNEXTHUNGARYPM-26MAY01,Will Péter Magyar become Prime Minister of Hungary following the 2026 Hungarian parliamentary election?
+KXNEXTHUNGARYPM-26MAY01-VORB,KXNEXTHUNGARYPM-26MAY01,Will Viktor Orbán become Prime Minister of Hungary following the 2026 Hungarian parliamentary election?
+KXNEXTUKPM-30-EMIL,KXNEXTUKPM-30,Will Ed Miliband be the next Prime Minister of United Kingdom?
+KXNEXTUKPM-30-NF,KXNEXTUKPM-30,Will Nigel Farage be the next Prime Minister of United Kingdom?
+KXNEXTUKPM-30-WS,KXNEXTUKPM-30,Will Wes Streeting be the next Prime Minister of United Kingdom?
+KXNJ11SD-26-AMEJ,KXNJ11SD-26,Will Analilia Mejia be the Democratic nominee for NJ-11?
+KXNJ11SD-26-TMAL,KXNJ11SD-26,Will Tom Malinowski be the Democratic nominee for NJ-11?
+KXNJ11SPECIAL2ND-26FEB05-2ND-AMEJ,KXNJ11SPECIAL2ND-26FEB05-2ND,Will Analilia Mejia finish 2nd in New Jersey's 11th Congressional district?
+KXNJ11SPECIAL2ND-26FEB05-2ND-TMAL,KXNJ11SPECIAL2ND-26FEB05-2ND,Will Tom Malinowski finish 2nd in New Jersey's 11th Congressional district?
+KXNOEMOUT-26MAR01,KXNOEMOUT,Will Kristi Noem leaves the Trump administration in after Issuance and before March 1?
+KXNURSESTRIKE-26-FEB15,KXNURSESTRIKE-26,"Will all NYSNA-represented nurses participating in the NYC hospital strike that began on January 12, 2026 stop striking before Feb 15, 2026?"
+KXNURSESTRIKE-26-MAR01,KXNURSESTRIKE-26,"Will all NYSNA-represented nurses participating in the NYC hospital strike that began on January 12, 2026 stop striking before Mar 1, 2026?"
+KXOCTSWEEP-25OCT31,KXOCTSWEEP-25OCT31,Will ANO win most seats in Czech Republic AND LLA wins most seats in Argentina AND PVV wins most seats in the Netherlands all win their elections?
+KXPAHLAVIHEAD-27JAN-RPAH,KXPAHLAVIHEAD-27JAN,Who will be the next the head of state or government of Iran?
+KXPAHLAVIVISITA-27JAN01,KXPAHLAVIVISITA,"Will Reza Pahlavi visit Iran before Jan 1, 2027?"
+KXPORTUGALSEGUROSWEEP-26FEB08,KXPORTUGALSEGUROSWEEP-26FEB08,Will Seguro win of Portugal's districts in the Portugal Presidential runoff?
+KXPRESNOMD-28-AB,KXPRESNOMD-28,Will Andy Beshear be the Democratic Presidential nominee in 2028?
+KXPRESNOMD-28-AOC,KXPRESNOMD-28,Will Alexandria Ocasio-Cortez be the Democratic Presidential nominee in 2028?
+KXPRESNOMD-28-CBOO,KXPRESNOMD-28,Will Cory Booker be the Democratic Presidential nominee in 2028?
+KXPRESNOMD-28-GN,KXPRESNOMD-28,Will Gavin Newsom be the Democratic Presidential nominee in 2028?
+KXPRESNOMD-28-GW,KXPRESNOMD-28,Will Gretchen Whitmer be the Democratic Presidential nominee in 2028?
+KXPRESNOMD-28-JBP,KXPRESNOMD-28,Will J.B. Pritzker be the Democratic Presidential nominee in 2028?
+KXPRESNOMD-28-JS,KXPRESNOMD-28,Will Josh Shapiro be the Democratic Presidential nominee in 2028?
+KXPRESNOMD-28-JTAL,KXPRESNOMD-28,Will James Talarico be the Democratic Presidential nominee in 2028?
+KXPRESNOMD-28-KH,KXPRESNOMD-28,Will Kamala Harris be the Democratic Presidential nominee in 2028?
+KXPRESNOMD-28-PB,KXPRESNOMD-28,Will Pete Buttigieg be the Democratic Presidential nominee in 2028?
+KXPRESNOMD-28-SAS,KXPRESNOMD-28,Will Stephen A. Smith be the Democratic Presidential nominee in 2028?
+KXPRESNOMR-28-DJTJR,KXPRESNOMR-28,Will Donald J. Trump Jr. be the nominee for the Presidency for the Republican party?
+KXPRESNOMR-28-GY,KXPRESNOMR-28,Will Glenn Youngkin be the nominee for the Presidency for the Republican party?
+KXPRESNOMR-28-JDV,KXPRESNOMR-28,Will J.D. Vance be the nominee for the Presidency for the Republican party?
+KXPRESNOMR-28-JH,KXPRESNOMR-28,Will Josh Hawley be the nominee for the Presidency for the Republican party?
+KXPRESNOMR-28-MR,KXPRESNOMR-28,Will Marco Rubio be the nominee for the Presidency for the Republican party?
+KXPRESNOMR-28-MTG,KXPRESNOMR-28,Will Marjorie Taylor Greene be the nominee for the Presidency for the Republican party?
+KXPRESNOMR-28-NH,KXPRESNOMR-28,Will Nikki Haley be the nominee for the Presidency for the Republican party?
+KXPRESNOMR-28-RDS,KXPRESNOMR-28,Will Ron DeSantis be the nominee for the Presidency for the Republican party?
+KXPRESNOMR-28-RFK,KXPRESNOMR-28,Will Robert F. Kennedy Jr. be the nominee for the Presidency for the Republican party?
+KXPRESNOMR-28-STE,KXPRESNOMR-28,Will Steve Bannon be the nominee for the Presidency for the Republican party?
+KXPRESNOMR-28-TG,KXPRESNOMR-28,Will Tulsi Gabbard be the nominee for the Presidency for the Republican party?
+KXPRESPERSON-28-ABES,KXPRESPERSON-28,Who will win the next presidential election?
+KXPRESPERSON-28-AOCA,KXPRESPERSON-28,Who will win the next presidential election?
+KXPRESPERSON-28-GNEWS,KXPRESPERSON-28,Who will win the next presidential election?
+KXPRESPERSON-28-GWHI,KXPRESPERSON-28,Who will win the next presidential election?
+KXPRESPERSON-28-JOSS,KXPRESPERSON-28,Who will win the next presidential election?
+KXPRESPERSON-28-JSHA,KXPRESPERSON-28,Who will win the next presidential election?
+KXPRESPERSON-28-JVAN,KXPRESPERSON-28,Who will win the next presidential election?
+KXPRESPERSON-28-KHAR,KXPRESPERSON-28,Who will win the next presidential election?
+KXPRESPERSON-28-MRUB,KXPRESPERSON-28,Who will win the next presidential election?
+KXPRESPERSON-28-RDES,KXPRESPERSON-28,Who will win the next presidential election?
+KXREDISTRICTING-26-KS,KXREDISTRICTING-26,What states will redistrict before the 2026 Congressional elections?
+KXREDISTRICTING-26-MD,KXREDISTRICTING-26,What states will redistrict before the 2026 Congressional elections?
+KXREDISTRICTING-26-NY,KXREDISTRICTING-26,What states will redistrict before the 2026 Congressional elections?
+KXRHOUSESEATS-27-193,KXRHOUSESEATS-27,Will the Republican Party win 193 seats  in the 120th Congress?
+KXRHOUSESEATS-27-195,KXRHOUSESEATS-27,Will the Republican Party win 193-197 seats  in the 120th Congress?
+KXRHOUSESEATS-27-230,KXRHOUSESEATS-27,Will the Republican Party win 228-232 seats  in the 120th Congress?
+KXRHOUSESEATS-27-235,KXRHOUSESEATS-27,Will the Republican Party win 233-237 seats  in the 120th Congress?
+KXRHOUSESEATS-27-237,KXRHOUSESEATS-27,Will the Republican Party win 237 seats  in the 120th Congress?
+KXSAVEACT-27-JAN04,KXSAVEACT-27,"Will ""SAVE Act"" (H.R. 22) becomes law before Jan 4, 2027?"
+KXSCOTUSVRARELEASE-26FEB13,KXSCOTUSVRARELEASE,"Will the Supreme Court release its opinion for Louisiana v. Callais before Feb 13, 2026?"
+KXSENATEGAR-26-BK,KXSENATEGAR-26,Wil Brian Kemp be the Republican nominee for the Senate in Georgia?
+KXSENATEMER-26-SCOL,KXSENATEMER-26,Wil Susan Collins be the Republican nominee for the Senate in Maine?
+KXSENATETXD-26-JCRO,KXSENATETXD-26,Wil Jasmine Crockett be the Democratic nominee for the Senate in Texas?
+KXSENATETXD-26-JTAL,KXSENATETXD-26,Wil James Talarico be the Democratic nominee for the Senate in Texas?
+KXSENATETXR-26-JC,KXSENATETXR-26,Wil John Cornyn be the Republican nominee for the Senate in Texas?
+KXSENATETXR-26-KP,KXSENATETXR-26,Wil Ken Paxton be the Republican nominee for the Senate in Texas?
+KXSENATETXR-26-WHUN,KXSENATETXR-26,Wil Wesley Hunt be the Republican nominee for the Senate in Texas?
+KXSTATE51-29-DC,KXSTATE51-29,"Will D.C. be the 51st U.S. state before Jan 20, 2029?"
+KXSUPERBOWLWHITEHOUSE-26DEC31,KXSUPERBOWLWHITEHOUSE,"Will The winning team of the 2026 Pro football Championship visit The White House before Dec 31, 2026?"
+KXTARIFFCHECKS-26-27,KXTARIFFCHECKS-26,Will it be reported that at least one million Americans have received checks of at least $1000 directly attributable to tariff revenue?
+KXTARIFFCHECKS-26-APR,KXTARIFFCHECKS-26,Will it be reported that at least one million Americans have received checks of at least $1000 directly attributable to tariff revenue?
+KXTARIFFCHECKS-26-AUG,KXTARIFFCHECKS-26,Will it be reported that at least one million Americans have received checks of at least $1000 directly attributable to tariff revenue?
+KXTARIFFCHECKS-26-JUL,KXTARIFFCHECKS-26,Will it be reported that at least one million Americans have received checks of at least $1000 directly attributable to tariff revenue?
+KXTARIFFCHECKS-26-MAR,KXTARIFFCHECKS-26,Will it be reported that at least one million Americans have received checks of at least $1000 directly attributable to tariff revenue?
+KXTARIFFCHECKS-26-MAY,KXTARIFFCHECKS-26,Will it be reported that at least one million Americans have received checks of at least $1000 directly attributable to tariff revenue?
+KXTHAILANDHOUSE-26FEB08-BJT,KXTHAILANDHOUSE-26FEB08,Will Bhumjaithai Party win the 2026 Thailand House of Representatives election?
+KXTHAILANDHOUSE-26FEB08-KL,KXTHAILANDHOUSE-26FEB08,Will Kla Tham Party win the 2026 Thailand House of Representatives election?
+KXTRUMPACT-26FEB07-26FEB09,KXTRUMPACT-26FEB07,"Will Trump do anything on Feb 9, 2026?"
+KXTRUMPACT-26FEB07-26FEB10,KXTRUMPACT-26FEB07,"Will Trump do anything on Feb 10, 2026?"
+KXTRUMPACT-26FEB07-26FEB11,KXTRUMPACT-26FEB07,"Will Trump do anything on Feb 11, 2026?"
+KXTRUMPADMINLEAVE-26DEC31-HLUT,KXTRUMPADMINLEAVE-26DEC31,Will Howard Lutnick leaves Secretary of Commerce in before 2027?
+KXTRUMPBULLCASECOMBO-27DEC-26,KXTRUMPBULLCASECOMBO-27DEC,Will the bull case for Trump occur in 2026?
+KXTRUMPMEET-26FEB-MCAR,KXTRUMPMEET-26FEB,"Donald Trump and Mark Carney meet before Mar 1, 2026?"
+KXTRUMPOUT27-27-28,KXTRUMPOUT27-27,Will Donald Trump leave office before 2028?
+KXTRUMPOUT27-27-DJT,KXTRUMPOUT27-27,Donald Trump out before 2027?
+KXTRUMPOUT27-27-JAN2029,KXTRUMPOUT27-27,"Will Donald Trump leave office before January 20, 2029?"
+KXTRUMPPARDON-27JAN01-EHOL,KXTRUMPPARDON-27JAN01,"Will Elizabeth Holmes receive a presidential pardon before Jan 1, 2027?"
+KXTRUMPPARDON-27JAN01-GMAX,KXTRUMPPARDON-27JAN01,"Will Ghislaine Maxwell receive a presidential pardon before Jan 1, 2027?"
+KXTRUMPPARDON-27JAN01-SBF,KXTRUMPPARDON-27JAN01,"Will Sam Bankman-Fried receive a presidential pardon before Jan 1, 2027?"
+KXTRUMPPARDONS-29JAN21-SBAN,KXTRUMPPARDONS-29JAN21,"Will Steve Bannon receive a presidential pardon before Jan 21, 2029?"
+KXTRUMPSCOTUSVOTE-26-0,KXTRUMPSCOTUSVOTE-26,"Will exactly 0 justices vote for the petitioner in Donald J. Trump, et al., v. V.O.S. Selections, Inc.?"
+KXTRUMPSCOTUSVOTE-26-1,KXTRUMPSCOTUSVOTE-26,"Will exactly 1 justices vote for the petitioner in Donald J. Trump, et al., v. V.O.S. Selections, Inc.?"
+KXTRUMPSCOTUSVOTE-26-2,KXTRUMPSCOTUSVOTE-26,"Will exactly 2 justices vote for the petitioner in Donald J. Trump, et al., v. V.O.S. Selections, Inc.?"
+KXTRUMPSCOTUSVOTE-26-4,KXTRUMPSCOTUSVOTE-26,"Will exactly 4 justices vote for the petitioner in Donald J. Trump, et al., v. V.O.S. Selections, Inc.?"
+KXTRUMPSCOTUSVOTE-26-5,KXTRUMPSCOTUSVOTE-26,"Will exactly 5 justices vote for the petitioner in Donald J. Trump, et al., v. V.O.S. Selections, Inc.?"
+KXTRUMPSCOTUSVOTE-26-6,KXTRUMPSCOTUSVOTE-26,"Will exactly 6 justices vote for the petitioner in Donald J. Trump, et al., v. V.O.S. Selections, Inc.?"
+KXTRUMPSCOTUSVOTE-26-7,KXTRUMPSCOTUSVOTE-26,"Will exactly 7 justices vote for the petitioner in Donald J. Trump, et al., v. V.O.S. Selections, Inc.?"
+KXTRUMPSUE-26-CNN,KXTRUMPSUE-26,Will Donald Trump sue CNN before May 2026?
+KXTRUMPSUE-26-NOAH,KXTRUMPSUE-26,Will Donald Trump sue Trevor Noah before May 2026?
+KXTRUMPSUE-26-NYT,KXTRUMPSUE-26,Will Donald Trump sue The New York Times before May 2026?
+KXTRUTHSOCIAL-26FEB14-T60,KXTRUTHSOCIAL-26FEB14,"Will Donald Trump make below 60 Truth Social posts the week of Feb 8, 2026?"
+KXTX18D-26-AEDW,KXTX18D-26,Will Amanda Edwards be the Democratic nominee for Texas 18th congressional district?
+KXTXSENDPRIMARYMOV-26MAR03-JTAL-P59,KXTXSENDPRIMARYMOV-26MAR03,Will the margin of victory for James Talarico in the first round of the 2026 Texas Senate Democratic primary be between 18% and 100%?
+KXUKBANGROK-26MAR01,KXUKBANGROK-26MAR01,"Will the United Kingdom announce a ban on Grok or its image generation capabilities before Mar 1, 2026?"
+KXUKPARTY-29-L,KXUKPARTY-29,Will Labour win the next U.K. election?
+KXUSAEXPANDTERRITORY-26JUL01,KXUSAEXPANDTERRITORY,"Will the United States acquire any territory not under its sovereignty (as of Issuance) before Jul 1, 2026?"
+KXUSAEXPANDTERRITORY-26MAR01,KXUSAEXPANDTERRITORY,"Will the United States acquire any territory not under its sovereignty (as of Issuance) before Mar 1, 2026?"
+KXUSAEXPANDTERRITORY-27JAN01,KXUSAEXPANDTERRITORY,"Will the United States acquire any territory not under its sovereignty (as of Issuance) before Jan 1, 2027?"
+KXUSAIRANAGREEMENT-27,KXUSAIRANAGREEMENT-27,Will the US agree to a new Iranian nuclear deal this year?
+KXUSAIRANAGREEMENT-27-26APR,KXUSAIRANAGREEMENT-27,Will the US agree to a new Iranian nuclear deal before April?
+KXUSAIRANAGREEMENT-27-26AUG,KXUSAIRANAGREEMENT-27,Will the US agree to a new Iranian nuclear deal before August?
+KXVENEZUELALEADER-26DEC31-DROD,KXVENEZUELALEADER-26DEC31,"Will Delcy Rodríguez be the head of state of Venezuela on Dec 31, 2026?"
+KXVENEZUELALEADER-26DEC31-MCM,KXVENEZUELALEADER-26DEC31,"Will María Corina Machado be the head of state of Venezuela on Dec 31, 2026?"
+KXVENEZUELALEADER-26DEC31-MRUB,KXVENEZUELALEADER-26DEC31,"Will Marco Rubio be the head of state of Venezuela on Dec 31, 2026?"
+KXVENEZUELALEADER2-26JUN01-DROD,KXVENEZUELALEADER2-26JUN01,"Will Delcy Rodríguez be the head of state of Venezuela on Jun 1, 2026?"
+KXVENEZUELALEADER2-26JUN01-DRON,KXVENEZUELALEADER2-26JUN01,"Will Diosdado Cabello Rondón be the head of state of Venezuela on Jun 1, 2026?"
+KXVISITGREENLAND-26MAY01-JDV,KXVISITGREENLAND,"Will JD Vance visit Greenland before May 1, 2026?"
+KXVISITMN-26MAR01-KNOE,KXVISITMN,"Will Kristi Noem visit Minnesota before Mar 1, 2026?"
+KXVPRESNOMD-28-GW,KXVPRESNOMD-28,Will Gretchen Whitmer be the nominee for the Vice Presidency for the Democratic party?
+KXVPRESNOMD-28-JBP,KXVPRESNOMD-28,Will J.B. Pritzker be the nominee for the Vice Presidency for the Democratic party?
+KXVPRESNOMD-28-JS,KXVPRESNOMD-28,Will Josh Shapiro be the nominee for the Vice Presidency for the Democratic party?
+KXWALESPARLIAMENT-26MAY07-CON,KXWALESPARLIAMENT-26MAY07,Will Conservative win the 2026 Senedd election?
+KXWALESPARLIAMENT-26MAY07-LAB,KXWALESPARLIAMENT-26MAY07,Will Labour win the 2026 Senedd election?
+KXWARSHNOM-26FEB13-T0,KXWARSHNOM,Will the count of nominations formally received by the US Senate for Kevin Warsh to be Chairman of the Board of Governors of the Federal Reserve be above 0 before February 13?
+KXWARSHNOM-26FEB20-T0,KXWARSHNOM,Will the count of nominations formally received by the US Senate for Kevin Warsh to be Chairman of the Board of Governors of the Federal Reserve be above 0 before February 20?
+KXWARSHNOM-26MAR01-T0,KXWARSHNOM,Will the count of nominations formally received by the US Senate for Kevin Warsh to be Chairman of the Board of Governors of the Federal Reserve be above 0 before March?
+KXXITAIWAN-27JAN01,KXXITAIWAN,"Will Xi Jinping visit Taiwan before Jan 1, 2027?"
+LEAVEPOWELL-25-26APR30,LEAVEPOWELL-25,Powell leaves before May 2026?
+SENATEAK-26-R,SENATEAK-26,Will Republicans win the Senate race in Alaska?
+SENATEIA-26-D,SENATEIA-26,Will Democratics win the Senate race in Iowa?
+SENATEIA-26-R,SENATEIA-26,Will Republicans win the Senate race in Iowa?
+SENATEME-26-R,SENATEME-26,Will Republicans win the Senate race in Maine?
+SENATENE-26-DOSB,SENATENE-26,Will Dan Osborn (as an independent)s win the Senate race in Nebraska?
+SENATENE-26-R,SENATENE-26,Will Republicans win the Senate race in Nebraska?
+SENATENH-26-D,SENATENH-26,Will Democratics win the Senate race in New Hampshire?
+SENATENM-26-D,SENATENM-26,Will Democratics win the Senate race in New Mexico?
+SENATENM-26-R,SENATENM-26,Will Republicans win the Senate race in New Mexico?
+SENATEOHS-26-R,SENATEOHS-26,Will Republicans win the Senate race in Ohio?
+SENATETX-26-D,SENATETX-26,Will Democratics win the Senate race in Texas?
+SENATETX-26-R,SENATETX-26,Will Republicans win the Senate race in Texas?

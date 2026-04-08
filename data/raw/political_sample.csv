@@ -1,0 +1,2 @@
+trade_id,ticker,price,count,count_fp,yes_price,no_price,yes_price_dollars,no_price_dollars,taker_side,created_time,value_usd
+c21f46d5-ad84-6e17-5927-5602e4ea9041,SENATESC-28-D,0.18,104,104.00,18,82,0.1800,0.8200,yes,2026-02-09T12:39:51.858854Z,18.72
