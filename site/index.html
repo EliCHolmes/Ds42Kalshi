@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalshi Political Trade Analysis – DS4200</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ====== HEADER ====== -->
+<header class="site-header">
+  <h1>Kalshi Political Trade Analysis</h1>
+  <p class="subtitle">How Big Money Moves in Political Prediction Markets</p>
+  <p class="team">Calvin, Eli, Angela &amp; Yash &nbsp;|&nbsp; DS4200 Spring 2026 &nbsp;|&nbsp; Northeastern University</p>
+</header>
+
+<div class="container">
+
+<!-- ====== INTRODUCTION ====== -->
+<section>
+  <h2>Introduction</h2>
+  <p>
+    Kalshi is a federally regulated exchange that allows people to trade on the outcome of real-world
+    events—interest rate decisions, government shutdowns, and political elections. Unlike traditional
+    polling, Kalshi functions as a prediction market where contract prices reflect the aggregate
+    probability the market assigns to an event, providing a real-time look at public sentiment.
+  </p>
+  <p>
+    This data is particularly compelling because it is <em>incentive-compatible</em>: traders put real
+    capital behind their predictions, which often makes these markets more responsive to breaking news
+    than traditional data sources. By analyzing large-scale trade data from the Kalshi API, we move
+    beyond surface-level percentages to examine the conviction, timing, and volume behind high-stakes
+    political participants.
+  </p>
+  <p>
+    Our analysis focuses on a 30-day window (January 19 – February 18, 2026) of political trades
+    valued at $2,000 or more, capturing the period around key events including the presidential
+    inauguration, government funding deadlines, and cabinet nomination battles.
+  </p>
+</section>
+
+<!-- ====== DATA DESCRIPTION ====== -->
+<section>
+  <h2>Data Description</h2>
+  <p>
+    <strong>Source:</strong> Kalshi REST API (<code>api.elections.kalshi.com</code>), collected via a
+    custom Python pipeline that paginates through all political trades globally and filters client-side.
+  </p>
+  <p>
+    <strong>Size:</strong> 7,646 trades across 559 unique markets, with 19 features per record after
+    enrichment.
+  </p>
+
+  <table class="data-table">
+    <thead>
+      <tr><th>Feature</th><th>Type</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>trade_id</td><td>Identifier</td><td>Unique trade hash</td></tr>
+      <tr><td>ticker</td><td>Categorical</td><td>Market ticker symbol (e.g., KXGOVTSHUTDOWN-26FEB14)</td></tr>
+      <tr><td>title</td><td>Categorical</td><td>Human-readable market question</td></tr>
+      <tr><td>event_ticker</td><td>Categorical</td><td>Groups related markets into events</td></tr>
+      <tr><td>market_topic</td><td>Categorical</td><td>High-level topic classification (7 categories)</td></tr>
+      <tr><td>taker_side</td><td>Categorical</td><td>"yes" or "no" – which side the taker bought</td></tr>
+      <tr><td>day_of_week</td><td>Categorical</td><td>Day the trade occurred (Monday–Sunday)</td></tr>
+      <tr><td>price</td><td>Continuous</td><td>Trade price (cents, 0–100)</td></tr>
+      <tr><td>yes_price / no_price</td><td>Continuous</td><td>Implied probability for each side (cents)</td></tr>
+      <tr><td>implied_probability</td><td>Continuous</td><td>Yes price as a 0–1 probability</td></tr>
+      <tr><td>count</td><td>Continuous</td><td>Number of contracts in the trade</td></tr>
+      <tr><td>value_usd</td><td>Continuous</td><td>Notional trade value in dollars</td></tr>
+      <tr><td>hour_of_day</td><td>Ordinal</td><td>Hour of trade in Eastern Time (0–23)</td></tr>
+      <tr><td>created_time</td><td>Temporal</td><td>UTC timestamp of trade execution</td></tr>
+    </tbody>
+  </table>
+
+  <p>
+    The dataset contains a healthy mix of categorical features (7 market topics, yes/no sides,
+    559 tickers) and continuous features (trade values ranging from $2,000 to over $40,000,
+    implied probabilities from 1% to 99%). All trades occurred on the Kalshi exchange and
+    represent real financial positions.
+  </p>
+</section>
+
+<!-- ====== REFERENCES ====== -->
+<section class="references">
+  <h2>References</h2>
+  <ul>
+    <li><a href="https://www.dlnews.com/articles/regulation/kalshi-ceo-tackles-difficulty-of-cracking-down-on-insider-trading/" target="_blank">DL News – Kalshi CEO Tackles Difficulty of Cracking Down on Insider Trading</a></li>
+    <li><a href="https://www.cbsnews.com/newyork/news/prediction-markets-kalshi-polymarket-regulation/" target="_blank">CBS News – Prediction Markets: Kalshi, Polymarket, and Regulation</a></li>
+  </ul>
+</section>
+
+<!-- ====== VISUALIZATIONS ====== -->
+
+<!-- VIZ 1: Daily Volume -->
+<div class="viz-section">
+  <h3>Visualization 1: Daily Political Trade Volume Over Time
+    <span class="viz-badge badge-altair">Altair</span>
+  </h3>
+  <p>An area chart showing the total daily volume (in USD) of political trades ≥ $2,000. Vertical
+    dashed lines mark key events. <strong>Interaction:</strong> Drag to brush a date range on the
+    top chart to zoom the bottom detail view.</p>
+
+  <div class="viz-container">
+    <iframe src="charts/viz1-daily-volume.html" title="Daily Volume"></iframe>
+  </div>
+
+  <div class="viz-takeaway">
+    <p><strong>Takeaway:</strong> Trade volume spikes sharply around government funding deadlines and
+    major political announcements. The February 14 shutdown deadline produced the single largest volume
+    day, indicating that traders concentrate capital when binary political outcomes approach resolution.</p>
+  </div>
+</div>
+
+<!-- VIZ 2: Top Markets Stacked -->
+<div class="viz-section">
+  <h3>Visualization 2: Top 12 Markets by Volume (Yes vs No)
+    <span class="viz-badge badge-altair">Altair</span>
+  </h3>
+  <p>Horizontal stacked bar chart showing the 12 highest-volume political markets, split by taker
+    side (Yes in blue, No in red). <strong>Interaction:</strong> Click the legend to isolate Yes or No
+    trades; hover for exact values.</p>
+
+  <div class="viz-container">
+    <iframe src="charts/viz2-top-markets.html" title="Top Markets"></iframe>
+  </div>
+
+  <div class="viz-takeaway">
+    <p><strong>Takeaway:</strong> Government shutdown markets dominate the top positions, with
+    substantial volumes on both sides—reflecting genuine uncertainty. Markets where one side dominates
+    (high Yes or high No volume) often represent strong consensus on the likely outcome, while balanced
+    markets indicate contested events.</p>
+  </div>
+</div>
+
+<!-- VIZ 3: Distribution -->
+<div class="viz-section">
+  <h3>Visualization 3: Trade Size Distribution by Market Topic
+    <span class="viz-badge badge-altair">Altair</span>
+  </h3>
+  <p>Faceted histograms showing how trade sizes are distributed across the four largest market topics.
+    Uses a colorblind-safe palette (no red/green adjacency).</p>
+
+  <div class="viz-container">
+    <iframe src="charts/viz3-distribution.html" title="Distribution" style="min-height: 600px;"></iframe>
+  </div>
+
+  <div class="viz-takeaway">
+    <p><strong>Takeaway:</strong> Most high-value trades cluster near the $2,000–$5,000 range across all
+    topics, but Government Shutdown and Elections topics show heavier tails—more traders are placing
+    very large bets ($10,000+). International Affairs trades are more concentrated at lower values,
+    suggesting broad interest but lower individual conviction.</p>
+  </div>
+</div>
+
+<!-- VIZ 4: Probability vs Value -->
+<div class="viz-section">
+  <h3>Visualization 4: Implied Probability vs Trade Value
+    <span class="viz-badge badge-altair">Altair</span>
+  </h3>
+  <p>Scatter plot showing implied probability (x) vs trade value (y, log scale) with point size
+    proportional to contract count. No rainbow colors—uses categorical topic encoding.
+    <strong>Interaction:</strong> Brush to highlight a region; hover for trade details.</p>
+
+  <div class="viz-container">
+    <iframe src="charts/viz4-probability.html" title="Probability vs Value" style="min-height: 550px;"></iframe>
+  </div>
+
+  <div class="viz-takeaway">
+    <p><strong>Takeaway:</strong> Large trades cluster at extreme probabilities (near 0% or near 100%),
+    not in the middle. This reveals that big-money traders tend to act when they perceive strong
+    conviction about an outcome—either buying "Yes" at high prices to lock in perceived certainties,
+    or buying "No" cheaply to bet against unlikely events at scale. The middle of the probability
+    range sees fewer very large trades, consistent with higher uncertainty deterring outsized positions.</p>
+  </div>
+</div>
+
+<!-- VIZ 5: Timeline (D3) -->
+<div class="viz-section">
+  <h3>Visualization 5: Interactive Trade Timeline Explorer
+    <span class="viz-badge badge-d3">D3</span>
+  </h3>
+  <p>Each point represents a single trade, positioned by time (x) and value (y, log scale). Shapes
+    distinguish market topics; a dashed trend line shows the overall direction.
+    <strong>Interaction:</strong> Drag to brush a time range and zoom in; double-click to reset.</p>
+
+  <div class="viz-container" id="viz5"></div>
+
+  <div class="viz-takeaway">
+    <p><strong>Takeaway:</strong> The timeline reveals distinct "bursts" of trading activity
+    corresponding to real-world events. Government Shutdown trades (circles) dominate late January
+    and early February as the funding deadline approached. Election-related triangles are more
+    evenly spread, reflecting ongoing nomination processes. The trend line shows relatively stable
+    average trade sizes across the period.</p>
+  </div>
+</div>
+
+<!-- VIZ 6: Deep Dive (D3) -->
+<div class="viz-section">
+  <h3>Visualization 6: Market Deep Dive – Price &amp; Volume Over Time
+    <span class="viz-badge badge-d3">D3</span>
+  </h3>
+  <p>A dual-axis chart combining daily trade volume (blue bars, left axis) with average implied
+    probability (red line, right axis) for a single market topic.
+    <strong>Interaction:</strong> Use the dropdown to switch between topics and see how price and
+    volume evolve differently for each category.</p>
+
+  <div class="viz-container" id="viz6"></div>
+
+  <div class="viz-takeaway">
+    <p><strong>Takeaway:</strong> For Government Shutdown markets, volume and probability move in
+    tandem as deadlines approach—rising conviction meets rising capital. For International Affairs,
+    volume is spikier and less correlated with probability, suggesting news-driven bursts rather than
+    steady accumulation. This tool lets viewers explore how different political domains behave
+    fundamentally differently in prediction markets.</p>
+  </div>
+</div>
+
+<!-- VIZ 7: Heatmap (D3) -->
+<div class="viz-section">
+  <h3>Visualization 7: Trade Activity Heatmap – Day of Week × Hour
+    <span class="viz-badge badge-d3">D3</span>
+  </h3>
+  <p>A heatmap showing total trade volume by day of week and hour (Eastern Time). Darker blue
+    indicates higher volume. <strong>Interaction:</strong> Hover over any cell for exact volume and
+    trade count.</p>
+
+  <div class="viz-container" id="viz7"></div>
+
+  <div class="viz-takeaway">
+    <p><strong>Takeaway:</strong> Trading activity peaks during weekday afternoon hours (roughly
+    10am–4pm ET), aligning with US market hours and when political news typically breaks.
+    Weekend activity is significantly lower but not zero—indicating that some traders actively
+    position around events that may occur outside business hours. Late-night trading is sparse
+    but occasionally spikes, likely driven by international developments.</p>
+  </div>
+</div>
+
+<!-- VIZ 8: Categories (D3) -->
+<div class="viz-section">
+  <h3>Visualization 8: Market Category Breakdown
+    <span class="viz-badge badge-d3">D3</span>
+  </h3>
+  <p>Bar chart comparing market topic categories across different metrics.
+    <strong>Interaction:</strong> Use the dropdown to switch between Total Volume, Number of Trades,
+    and Average Trade Size. Hover for detailed statistics including unique market count.</p>
+
+  <div class="viz-container" id="viz8"></div>
+
+  <div class="viz-takeaway">
+    <p><strong>Takeaway:</strong> While Government Shutdown and Elections dominate in total volume,
+    switching to average trade size reveals that Executive Orders &amp; Policy trades tend to be
+    individually larger—suggesting that policy-focused traders place fewer but more concentrated bets.
+    This multi-metric view prevents the misleading conclusion that volume alone captures market importance.</p>
+  </div>
+</div>
+
+<!-- ====== SUMMARY / CONCLUSIONS ====== -->
+<section>
+  <h2>Summary &amp; Conclusions</h2>
+  <p>Through eight visualizations spanning macro overviews to granular deep-dives, we identified
+  several key patterns in how capital flows through political prediction markets:</p>
+
+  <ol class="conclusion-list">
+    <li><strong>Deadline-driven capital concentration:</strong> Political prediction markets see dramatic
+    volume spikes as binary events approach their resolution dates. Government shutdown deadlines
+    produced the largest single-day volumes in our dataset, suggesting that traders wait for maximum
+    information before committing large positions.</li>
+
+    <li><strong>Conviction at the extremes:</strong> The largest trades consistently cluster at very
+    high (>90%) or very low (<10%) implied probabilities, not in the uncertain middle. Big-money
+    participants appear to trade on strong conviction rather than speculating on 50/50 outcomes—a
+    pattern consistent with informed, rational capital allocation.</li>
+
+    <li><strong>Topic-specific trading behaviors:</strong> Different political categories exhibit
+    fundamentally different trading patterns. Government Shutdown markets show steady accumulation
+    toward deadlines, while International Affairs markets are driven by unpredictable news bursts.
+    Understanding these structural differences is essential for interpreting prediction market signals
+    as political indicators.</li>
+  </ol>
+
+  <p><strong>Future work</strong> could extend this analysis to longer time windows, incorporate
+  real-time news event timestamps for causal analysis, compare Kalshi prices with traditional
+  polling data, or model trader behavior segmentation based on trade size and timing patterns.</p>
+</section>
+
+</div><!-- /container -->
+
+<!-- ====== FOOTER ====== -->
+<footer class="site-footer">
+  <p>DS4200 Information Presentation &amp; Data Visualization &nbsp;|&nbsp; Spring 2026 &nbsp;|&nbsp;
+  Northeastern University</p>
+  <p>Data source: <a href="https://kalshi.com" target="_blank">Kalshi Exchange</a> via public REST API</p>
+</footer>
+
+<!-- D3 library -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<!-- D3 Visualizations -->
+<script src="js/viz5-timeline.js"></script>
+<script src="js/viz6-deepdive.js"></script>
+<script src="js/viz7-heatmap.js"></script>
+<script src="js/viz8-categories.js"></script>
+
+</body>
+</html>

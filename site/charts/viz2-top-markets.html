@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.1.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-69ba8f7449f1861b06eec35e97e1fe5f"}, "mark": {"type": "bar"}, "encoding": {"color": {"field": "taker_side", "scale": {"domain": ["yes", "no"], "range": ["#4477AA", "#EE6677"]}, "title": "Taker Side", "type": "nominal"}, "opacity": {"condition": {"param": "param_6b2994eb46068253", "value": 1}, "value": 0.2}, "tooltip": [{"field": "short_title", "title": "Market", "type": "nominal"}, {"field": "taker_side", "title": "Side", "type": "nominal"}, {"field": "value_usd", "format": "$,.0f", "title": "Volume (USD)", "type": "quantitative"}], "x": {"axis": {"format": "$,.0f"}, "field": "value_usd", "title": "Total Trade Volume (USD)", "type": "quantitative"}, "y": {"field": "short_title", "sort": ["Will Trump next nominate Christopher Waller as Fed Chai...", "Will the federal government shut down for more than 3 d...", "Will Ali Khamenei leave office before 2026-03-01T15:00:...", "Will Trump announce his new Chair of the Federal Reserv...", "Will Trump next nominate Rick Rieder as Fed Chair?", "Will Ali Khamenei leave office before 2026-02-01T15:00:...", "Will Trump next nominate Michelle Bowman as Fed Chair?", "Will the US government be shut down on Feb 14, 2026?", "Will the federal government shut down for more than 4 d...", "Will Trump next nominate Kevin Warsh as Fed Chair?", "Will the government be shut down on January 31?", "Will Trump next nominate Judy Shelton as Fed Chair?"], "title": null, "type": "nominal"}}, "height": 400, "params": [{"name": "param_6b2994eb46068253", "select": {"type": "point", "fields": ["taker_side"]}, "bind": "legend"}], "title": "Top 12 Political Markets by Volume (Yes vs No)", "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json", "datasets": {"data-69ba8f7449f1861b06eec35e97e1fe5f": [{"ticker": "KXFEDCHAIRNOM-29-CWAL", "title": "Will Trump next nominate Christopher Waller as Fed Chair?", "taker_side": "no", "value_usd": 759826.67, "short_title": "Will Trump next nominate Christopher Waller as Fed Chai..."}, {"ticker": "KXFEDCHAIRNOM-29-CWAL", "title": "Will Trump next nominate Christopher Waller as Fed Chair?", "taker_side": "yes", "value_usd": 7302.35, "short_title": "Will Trump next nominate Christopher Waller as Fed Chai..."}, {"ticker": "KXFEDCHAIRNOM-29-JS", "title": "Will Trump next nominate Judy Shelton as Fed Chair?", "taker_side": "no", "value_usd": 16654121.290000001, "short_title": "Will Trump next nominate Judy Shelton as Fed Chair?"}, {"ticker": "KXFEDCHAIRNOM-29-JS", "title": "Will Trump next nominate Judy Shelton as Fed Chair?", "taker_side": "yes", "value_usd": 420524.63, "short_title": "Will Trump next nominate Judy Shelton as Fed Chair?"}, {"ticker": "KXFEDCHAIRNOM-29-KW", "title": "Will Trump next nominate Kevin Warsh as Fed Chair?", "taker_side": "no", "value_usd": 314343.01, "short_title": "Will Trump next nominate Kevin Warsh as Fed Chair?"}, {"ticker": "KXFEDCHAIRNOM-29-KW", "title": "Will Trump next nominate Kevin Warsh as Fed Chair?", "taker_side": "yes", "value_usd": 7950091.14, "short_title": "Will Trump next nominate Kevin Warsh as Fed Chair?"}, {"ticker": "KXFEDCHAIRNOM-29-MBOW", "title": "Will Trump next nominate Michelle Bowman as Fed Chair?", "taker_side": "no", "value_usd": 2122804.71, "short_title": "Will Trump next nominate Michelle Bowman as Fed Chair?"}, {"ticker": "KXFEDCHAIRNOM-29-MBOW", "title": "Will Trump next nominate Michelle Bowman as Fed Chair?", "taker_side": "yes", "value_usd": 6000.0, "short_title": "Will Trump next nominate Michelle Bowman as Fed Chair?"}, {"ticker": "KXFEDCHAIRNOM-29-RREI", "title": "Will Trump next nominate Rick Rieder as Fed Chair?", "taker_side": "no", "value_usd": 1004252.6, "short_title": "Will Trump next nominate Rick Rieder as Fed Chair?"}, {"ticker": "KXFEDCHAIRNOM-29-RREI", "title": "Will Trump next nominate Rick Rieder as Fed Chair?", "taker_side": "yes", "value_usd": 197258.95, "short_title": "Will Trump next nominate Rick Rieder as Fed Chair?"}, {"ticker": "KXGOVSHUT-26JAN31", "title": "Will the government be shut down on January 31?", "taker_side": "no", "value_usd": 1453821.18, "short_title": "Will the government be shut down on January 31?"}, {"ticker": "KXGOVSHUT-26JAN31", "title": "Will the government be shut down on January 31?", "taker_side": "yes", "value_usd": 9675102.32, "short_title": "Will the government be shut down on January 31?"}, {"ticker": "KXGOVSHUTLENGTH-26FEB28-3D", "title": "Will the federal government shut down for more than 3 days?", "taker_side": "no", "value_usd": 54256.62, "short_title": "Will the federal government shut down for more than 3 d..."}, {"ticker": "KXGOVSHUTLENGTH-26FEB28-3D", "title": "Will the federal government shut down for more than 3 days?", "taker_side": "yes", "value_usd": 781492.92, "short_title": "Will the federal government shut down for more than 3 d..."}, {"ticker": "KXGOVSHUTLENGTH-26FEB28-4D", "title": "Will the federal government shut down for more than 4 days?", "taker_side": "no", "value_usd": 4164496.61, "short_title": "Will the federal government shut down for more than 4 d..."}, {"ticker": "KXGOVSHUTLENGTH-26FEB28-4D", "title": "Will the federal government shut down for more than 4 days?", "taker_side": "yes", "value_usd": 128070.33, "short_title": "Will the federal government shut down for more than 4 d..."}, {"ticker": "KXGOVTSHUTDOWN-26FEB14", "title": "Will the US government be shut down on Feb 14, 2026?", "taker_side": "no", "value_usd": 140039.68, "short_title": "Will the US government be shut down on Feb 14, 2026?"}, {"ticker": "KXGOVTSHUTDOWN-26FEB14", "title": "Will the US government be shut down on Feb 14, 2026?", "taker_side": "yes", "value_usd": 2623214.54, "short_title": "Will the US government be shut down on Feb 14, 2026?"}, {"ticker": "KXKHAMENEIOUT-AKHA-26FEB01", "title": "Will Ali Khamenei leave office before 2026-02-01T15:00:00.000Z?", "taker_side": "no", "value_usd": 1718337.31, "short_title": "Will Ali Khamenei leave office before 2026-02-01T15:00:..."}, {"ticker": "KXKHAMENEIOUT-AKHA-26FEB01", "title": "Will Ali Khamenei leave office before 2026-02-01T15:00:00.000Z?", "taker_side": "yes", "value_usd": 5083.200000000001, "short_title": "Will Ali Khamenei leave office before 2026-02-01T15:00:..."}, {"ticker": "KXKHAMENEIOUT-AKHA-26MAR01", "title": "Will Ali Khamenei leave office before 2026-03-01T15:00:00.000Z?", "taker_side": "no", "value_usd": 884010.7, "short_title": "Will Ali Khamenei leave office before 2026-03-01T15:00:..."}, {"ticker": "KXKHAMENEIOUT-AKHA-26MAR01", "title": "Will Ali Khamenei leave office before 2026-03-01T15:00:00.000Z?", "taker_side": "yes", "value_usd": 21393.59, "short_title": "Will Ali Khamenei leave office before 2026-03-01T15:00:..."}, {"ticker": "KXPRESNOMFEDCHAIR-25-26FEB", "title": "Will Trump announce his new Chair of the Federal Reserve in 2026?", "taker_side": "no", "value_usd": 272547.67, "short_title": "Will Trump announce his new Chair of the Federal Reserv..."}, {"ticker": "KXPRESNOMFEDCHAIR-25-26FEB", "title": "Will Trump announce his new Chair of the Federal Reserve in 2026?", "taker_side": "yes", "value_usd": 874281.49, "short_title": "Will Trump announce his new Chair of the Federal Reserv..."}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

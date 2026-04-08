@@ -1,0 +1,244 @@
+Design Rationale – Kalshi Political Trade Analysis
+DS4200 Information Presentation & Data Visualization
+Calvin, Eli, Angela & Yash | Spring 2026 | Northeastern University
+
+Published website: https://eliholmes.github.io/Ds42Kalshi/
+
+========================================================================
+VISUALIZATION 1: Daily Political Trade Volume Over Time (Altair)
+========================================================================
+
+Design idea:
+We chose an area chart (filled line chart) to show total daily trade volume
+because it naturally emphasizes magnitude over time—the filled area draws the
+eye to peaks and valleys more effectively than a bare line. The monotone
+interpolation smooths visual noise from day-to-day fluctuations while
+preserving the true data points.
+
+Key design choices:
+- Vertical dashed annotation lines mark key political events (Inauguration,
+  funding deadlines). These provide context that transforms the chart from
+  "here is volume" into "here is why volume changed."
+- A two-panel brush+detail layout lets viewers explore macro trends in the
+  top panel and zoom into specific date ranges in the bottom panel without
+  losing overall context.
+- Single-hue blue avoids unnecessary color complexity for a single series.
+
+Alternatives considered:
+- Bar chart (one bar per day): Rejected because bars create visual
+  discontinuities that obscure the trend. The area fill communicates flow.
+- Multi-line by topic: Rejected for this overview chart—too many overlapping
+  lines. Topic breakdown is handled in Viz 6 instead.
+
+Professor feedback incorporated:
+- "Add in annotations—what happens on that day?" → Added vertical rules with
+  event labels for Inauguration Day, government funding deadlines.
+- "Introduce interactive plot" → Implemented brush selection for date-range
+  zoom.
+
+
+========================================================================
+VISUALIZATION 2: Top 12 Markets by Volume, Yes/No Stacked (Altair)
+========================================================================
+
+Design idea:
+A horizontal stacked bar chart was chosen because it handles long market
+titles better than vertical bars (titles read naturally on the y-axis) and
+the stacking directly shows how volume splits between Yes and No takers.
+
+Key design choices:
+- Blue (#4477AA) for Yes, coral (#EE6677) for No—distinguishable for all
+  common forms of color vision deficiency (tested with Coblis CVD simulator).
+- Markets sorted by total volume (descending from top) so the most important
+  markets are seen first.
+- Human-readable titles instead of raw ticker codes.
+- Legend-click interaction to isolate Yes or No: this reveals which markets
+  have balanced two-sided trading vs one-sided consensus.
+
+Alternatives considered:
+- Grouped (side-by-side) bars: Rejected because grouped bars make it harder
+  to compare totals across markets. Stacking preserves the total comparison.
+- Pie chart for Yes/No split: Rejected—pie charts are poor for precise
+  comparison and violate DS4200 best practices.
+
+Professor feedback incorporated:
+- "Top 12 Markets—combine yes and no (stack)" → Directly implemented.
+- "Look into type of events" → Market titles reveal event types.
+
+
+========================================================================
+VISUALIZATION 3: Trade Size Distribution by Market Topic (Altair)
+========================================================================
+
+Design idea:
+Faceted histograms allow direct comparison of trade size distributions across
+market topics without overplotting. Each facet uses independent y-axes since
+topics have very different trade counts, ensuring that smaller categories
+remain readable.
+
+Key design choices:
+- Colorblind-safe Tol palette (#4477AA, #EE6677, #228833, #CCBB44): avoids
+  the red/green problem. No adjacent colors are confusable under common CVD.
+- 30 bins balances detail with readability for the $2,000–$40,000+ range.
+- Four main topics shown (Government Shutdown, Elections, International,
+  Executive Orders); small categories omitted to reduce clutter.
+
+Alternatives considered:
+- Overlaid density plots: Rejected because overlapping densities are hard to
+  read with 4+ categories and obscure the raw frequency counts.
+- Violin plots: Considered, but histograms are more familiar to the audience
+  and directly show counts.
+
+Professor feedback incorporated:
+- "Not red or green for colorblind" → Used the Tol colorblind-safe palette.
+- "Change to shape" → Applied in Viz 5 (D3 scatter) where shape encoding
+  is more effective; histograms use color per topic instead.
+
+
+========================================================================
+VISUALIZATION 4: Implied Probability vs Trade Value (Altair)
+========================================================================
+
+Design idea:
+A scatter plot on a log-scaled y-axis reveals the relationship between how
+certain the market is (implied probability) and how much capital is at stake.
+The log scale is necessary because trade values span from $2,000 to $40,000+.
+
+Key design choices:
+- Sequential single-hue considerations: we use the Tol categorical palette
+  for topic encoding rather than a rainbow gradient, per professor feedback.
+  Color encodes topic, not a continuous variable.
+- Point size encodes contract count, adding a third data dimension without
+  requiring a third spatial axis.
+- Brush selection lets viewers isolate regions of interest and see which
+  topics dominate at different probability levels.
+
+Alternatives considered:
+- Heatmap/2D histogram: Rejected because individual trade identity matters—
+  the tooltip reveals specific market titles.
+- Linear y-axis: Rejected because the heavy right skew compresses most points
+  to the bottom.
+
+Professor feedback incorporated:
+- "Volume by Implied—do not use rainbow, take color off" → No rainbow.
+  Used categorical topic colors from the Tol palette.
+
+
+========================================================================
+VISUALIZATION 5: Interactive Trade Timeline Explorer (D3)
+========================================================================
+
+Design idea:
+A scatter plot of individual trades over time, using shape encoding for
+market topic, provides the most granular view of when and how big-money
+trades occur. D3 enables smooth brush+zoom transitions.
+
+Key design choices:
+- Shape encoding for topic (circle, triangle, square, diamond, star, cross,
+  wye): allows topic identification without relying solely on color—critical
+  for accessibility.
+- Log-scaled y-axis for trade value (same rationale as Viz 4).
+- Dashed trend line (linear regression in log space) shows whether average
+  trade size is trending up or down over the window.
+- Brush to zoom + double-click to reset: the primary interaction pattern.
+- Semi-transparent points (opacity 0.55) reduce overplotting for 7,646 points.
+
+Alternatives considered:
+- Jittered strip plot: Rejected—loses the temporal precision.
+- Animated replay: Considered but adds complexity without analytical value.
+
+Professor feedback incorporated:
+- "Scatterplot—change to shape" → Shape encodes market topic.
+- "Not red or green for colorblind" → Same Tol palette as all other charts.
+- "Indication line to highlight trend" → Dashed regression line overlaid.
+
+
+========================================================================
+VISUALIZATION 6: Market Deep Dive – Price & Volume Over Time (D3)
+========================================================================
+
+Design idea:
+A dual-axis chart combining daily volume (bars, left axis) and average
+implied probability (line, right axis) reveals how conviction and capital
+co-evolve for a specific political topic. The dropdown interaction lets
+viewers compare structural patterns across topics.
+
+Key design choices:
+- Blue bars for volume, red line for probability: distinct visual channels
+  (bar vs line) plus distinct colors ensure they are never confused.
+- Dropdown selector (not radio buttons or tabs): scales well to 7 topics
+  and is a familiar interaction pattern.
+- Animated transitions on topic change help viewers track what changed.
+
+Alternatives considered:
+- Separate charts for volume and probability: Rejected—the dual-axis format
+  directly reveals correlation/decorrelation between the two metrics.
+- Small multiples (one per topic): Considered, but the interactive dropdown
+  uses less space and focuses attention.
+
+Professor feedback incorporated:
+- "Use one topic with related questions" → Dropdown scopes to one topic.
+- "Maybe introduce interactive plot → allows viewer to choose the topic"
+  → Dropdown selector.
+- "What policies/events occurred on that day?" → Volume spikes in context
+  with probability shifts reveal event impacts.
+
+
+========================================================================
+VISUALIZATION 7: Trade Activity Heatmap – Day of Week × Hour (D3)
+========================================================================
+
+Design idea:
+A heatmap naturally encodes a 2D categorical grid (day × hour) with color
+intensity. This reveals temporal trading patterns invisible in other charts.
+
+Key design choices:
+- Sequential single-hue blues: the simplest effective color scale for a
+  single quantitative variable. No rainbow, no diverging scale (there is
+  no meaningful midpoint).
+- Rounded corners on cells for a cleaner aesthetic.
+- Abbreviated day names (Mon, Tue...) and AM/PM hour labels for readability.
+- Gradient legend with axis for precise value lookup.
+
+Alternatives considered:
+- Calendar heatmap (GitHub-style): Rejected because it shows specific dates,
+  not the day-of-week × hour pattern we want to reveal.
+- 3D surface plot: Rejected—gratuitous 3D adds no information and violates
+  DS4200 design principles.
+
+Professor feedback incorporated:
+- General principle: "No unnecessary 3D" → Used 2D heatmap.
+- "Do not use rainbow" → Sequential blues only.
+
+
+========================================================================
+VISUALIZATION 8: Market Category Breakdown (D3)
+========================================================================
+
+Design idea:
+A bar chart comparing market topic categories across switchable metrics
+(total volume, trade count, average trade size) prevents the common mistake
+of drawing conclusions from a single metric. The dropdown interaction reveals
+that volume leaders are not necessarily the categories with the largest
+individual trades.
+
+Key design choices:
+- Consistent Tol topic colors matching all other visualizations.
+- Animated bar transitions when switching metrics help viewers track
+  how categories re-rank.
+- Value labels on bars for precise reading without requiring axis lookup.
+- Tooltip includes unique market count—an important context variable not
+  shown in the bars.
+
+Alternatives considered:
+- Treemap: Considered for showing hierarchical structure, but the flat
+  category list does not have a natural hierarchy, and treemaps are harder
+  to read precisely.
+- Stacked bar (all metrics): Rejected because the three metrics have
+  different units and scales; stacking them would be misleading.
+
+Professor feedback incorporated:
+- "Look into countries, type of events" → Market topics include
+  "International Affairs" which groups country-focused markets; the tooltip
+  shows unique market counts per topic.
+- "Thinking about color blindness" → Same Tol palette throughout.

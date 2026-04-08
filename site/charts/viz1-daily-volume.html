@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.1.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "vconcat": [{"layer": [{"data": {"name": "data-64cc7202729be1bd0563caaa6c171297"}, "mark": {"type": "area", "color": {"gradient": "linear", "stops": [{"color": "#4477AA", "offset": 1}, {"color": "#4477AA40", "offset": 0}], "x1": 1, "x2": 1, "y1": 1, "y2": 0}, "interpolate": "monotone", "line": {"color": "#4477AA"}}, "encoding": {"tooltip": [{"field": "date", "format": "%b %d, %Y", "title": "Date", "type": "temporal"}, {"field": "total_volume", "format": "$,.0f", "title": "Volume (USD)", "type": "quantitative"}, {"field": "trade_count", "title": "Trades", "type": "quantitative"}], "x": {"axis": {"format": "%b %d"}, "field": "date", "title": "Date", "type": "temporal"}, "y": {"field": "total_volume", "title": "Daily Trade Volume (USD)", "type": "quantitative"}}, "name": "view_ea2bec81fbeb33e6_0"}, {"data": {"name": "data-71b03d9d3856f06174ecd21ee8291e23"}, "mark": {"type": "rule", "color": "#AA3377", "strokeDash": [4, 4], "strokeWidth": 1.5}, "encoding": {"x": {"field": "date", "type": "temporal"}}}, {"data": {"name": "data-71b03d9d3856f06174ecd21ee8291e23"}, "mark": {"type": "text", "align": "left", "color": "#AA3377", "dx": 5, "dy": -5, "fontSize": 11, "fontWeight": "bold"}, "encoding": {"text": {"field": "label", "type": "nominal"}, "x": {"field": "date", "type": "temporal"}}}], "height": 280, "title": "Daily Political Trade Volume Over Time (USD, trades \u2265 $2,000)", "width": 700}, {"data": {"name": "data-64cc7202729be1bd0563caaa6c171297"}, "mark": {"type": "area", "color": "#4477AA40", "interpolate": "monotone", "line": {"color": "#4477AA"}}, "encoding": {"x": {"axis": {"format": "%b %d"}, "field": "date", "title": "Date", "type": "temporal"}, "y": {"field": "total_volume", "title": "Daily Trade Volume (USD)", "type": "quantitative"}}, "height": 120, "title": "Brush above to zoom into a date range", "transform": [{"filter": {"param": "param_c97a99acfc68b794"}}], "width": 700}], "params": [{"name": "param_c97a99acfc68b794", "select": {"type": "interval", "encodings": ["x"]}, "views": ["view_ea2bec81fbeb33e6_0"]}], "resolve": {"scale": {"x": "shared"}}, "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json", "datasets": {"data-64cc7202729be1bd0563caaa6c171297": [{"date": "2026-01-19T00:00:00", "total_volume": 152057.82, "trade_count": 34}, {"date": "2026-01-20T00:00:00", "total_volume": 1457257.38, "trade_count": 181}, {"date": "2026-01-21T00:00:00", "total_volume": 1495983.14, "trade_count": 183}, {"date": "2026-01-22T00:00:00", "total_volume": 911116.38, "trade_count": 146}, {"date": "2026-01-23T00:00:00", "total_volume": 1052382.84, "trade_count": 166}, {"date": "2026-01-24T00:00:00", "total_volume": 991974.8200000001, "trade_count": 177}, {"date": "2026-01-25T00:00:00", "total_volume": 676293.19, "trade_count": 114}, {"date": "2026-01-26T00:00:00", "total_volume": 666166.91, "trade_count": 117}, {"date": "2026-01-27T00:00:00", "total_volume": 933286.03, "trade_count": 185}, {"date": "2026-01-28T00:00:00", "total_volume": 1216221.26, "trade_count": 257}, {"date": "2026-01-29T00:00:00", "total_volume": 3535489.71, "trade_count": 589}, {"date": "2026-01-30T00:00:00", "total_volume": 13411937.86, "trade_count": 1650}, {"date": "2026-01-31T00:00:00", "total_volume": 6208113.67, "trade_count": 644}, {"date": "2026-02-01T00:00:00", "total_volume": 2949397.77, "trade_count": 202}, {"date": "2026-02-02T00:00:00", "total_volume": 4237551.8, "trade_count": 231}, {"date": "2026-02-03T00:00:00", "total_volume": 6928199.74, "trade_count": 673}, {"date": "2026-02-04T00:00:00", "total_volume": 704056.44, "trade_count": 101}, {"date": "2026-02-05T00:00:00", "total_volume": 1106216.0, "trade_count": 119}, {"date": "2026-02-06T00:00:00", "total_volume": 885395.24, "trade_count": 139}, {"date": "2026-02-07T00:00:00", "total_volume": 776288.53, "trade_count": 85}, {"date": "2026-02-08T00:00:00", "total_volume": 787418.85, "trade_count": 102}, {"date": "2026-02-09T00:00:00", "total_volume": 2290267.07, "trade_count": 152}, {"date": "2026-02-10T00:00:00", "total_volume": 1275312.77, "trade_count": 140}, {"date": "2026-02-11T00:00:00", "total_volume": 951107.48, "trade_count": 114}, {"date": "2026-02-12T00:00:00", "total_volume": 1047918.39, "trade_count": 172}, {"date": "2026-02-13T00:00:00", "total_volume": 3712986.78, "trade_count": 444}, {"date": "2026-02-14T00:00:00", "total_volume": 881562.31, "trade_count": 105}, {"date": "2026-02-15T00:00:00", "total_volume": 692475.83, "trade_count": 78}, {"date": "2026-02-16T00:00:00", "total_volume": 1008177.7000000001, "trade_count": 119}, {"date": "2026-02-17T00:00:00", "total_volume": 880091.64, "trade_count": 120}, {"date": "2026-02-18T00:00:00", "total_volume": 1402830.23, "trade_count": 107}], "data-71b03d9d3856f06174ecd21ee8291e23": [{"date": "2026-01-20T00:00:00", "label": "Inauguration Day"}, {"date": "2026-02-01T00:00:00", "label": "Gov Funding Deadline"}, {"date": "2026-02-14T00:00:00", "label": "Shutdown Deadline (Feb 14)"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
